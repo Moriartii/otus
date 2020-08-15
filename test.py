@@ -1,11 +1,4 @@
 #!/usr/bin/python3
-#
-#import this
-#print('')
-#print("Hello World!!!")
-#
-#class Vehicle:
-#    pass
 
 import sys
 
