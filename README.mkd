@@ -1,5 +1,5 @@
 **Привет!**
-*Это мой репозиторий на **GitHub**!*
+*Это мой OTUS-репозиторий на **GitHub**!*
 
 # The Zen of Python, by Tim Peters
   
