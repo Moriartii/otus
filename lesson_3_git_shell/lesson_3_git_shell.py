@@ -1,12 +1,7 @@
 #!/usr/bin/python3
 
 '''
-def expone(*args, exponenta=1):
-    after_exp = []
-    for x in args:
-        x = x**exponenta
-        after_exp.append(x)
-    return after_exp, exponenta
+Фунцкия возведения чисел в определенную степень.
 '''
 
 
@@ -23,12 +18,25 @@ def timing_decorator(func):
 
 
 @timing_decorator
-def expone(*args, exponenta=1):
+def expone(*args, exponenta=2):
     after_exp = []
     for x in args:
-        x = x**exponenta
-        after_exp.append(x)
+        for y in x:
+            y = y**exponenta
+            after_exp.append(y)
     return after_exp, exponenta
 
 
-expone(1,2,3,4,5, exponenta=3)
+try: 
+    input_numbers = [] 
+    while True: 
+        input_numbers.append(int(input("Введите целое число для добавлени в список. Для окончания списка введи любую букву: ")))  
+except: 
+    print("Список чисел сформирован!")
+
+
+input_exponenta = int(input("Введите степень числа: "))
+
+result = expone(input_numbers, exponenta=input_exponenta)
+
+print(result)
